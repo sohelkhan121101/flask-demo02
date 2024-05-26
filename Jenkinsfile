@@ -8,7 +8,7 @@ pipeline {
 
     stages {
         stage('Clone Repo') { 
-            git url: 'https://github.com/sohelkhan121101/flask-calculator.git', branch: 'main'
+            git url: 'https://github.com/sohelkhan121101/flask-demo02.git', branch: 'main'
         }    
 
         stage('Build Project') {
