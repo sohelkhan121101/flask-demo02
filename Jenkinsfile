@@ -8,7 +8,11 @@ pipeline {
 
     stages {
         stage('Clone Repo') { 
-            git url: 'https://github.com/sohelkhan121101/flask-demo02.git', branch: 'master'
+            steps {
+                script {
+                    git url: 'https://github.com/sohelkhan121101/flask-demo02.git', branch: 'master'
+                }
+            }
         }    
 
         stage('Build Project') {
