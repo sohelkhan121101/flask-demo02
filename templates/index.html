@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(45deg, #00fff2, #beff93);
+            color: white;
+        }
+        button.btn.btn-primary {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+        max-width: 400px; /* Adjust as needed */
+        margin: 0 auto;
+      }
+      .bottom-center {
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 30%;
+        padding-bottom: 10px; 
+        padding-left: 60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bottom-center a {
+        display: block; /* Make the link take up the entire container */
+    }
+   
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Calculator</h1>
+        <form action="/calculate" method="post">
+            <div class="form-group">
+                <input type="number" name="num1" class="form-control" placeholder="Enter first number" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="num2" class="form-control" placeholder="Enter second number" required>
+            </div>
+            <div class="form-group">
+                <select name="operation" class="form-control">
+                    <option value="add">Addition</option>
+                    <option value="Subtraction">Subtraction</option>
+                    <option value="multiply">Multiplication</option>
+                    <option value="divide">Division</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+<<<<<<< HEAD
+    </div>    
+</body>    
+=======
+    </div>
+</body>
+>>>>>>> 9d7f3b7412f7bc3ad1ae30e6fc0eeb903cfd00c7
+</html>
